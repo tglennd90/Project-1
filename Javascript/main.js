@@ -38,6 +38,7 @@ $.ajax({
   url: "http://apilayer.net/api/live?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
   method: "GET"
 }).then(function(response) {
+  console.log(" ");
   console.log("-------------------------------");
   console.log("Currency Layer - Exchange Rate");
   console.log("-------------------------------");
@@ -51,6 +52,7 @@ $.ajax({
   url: "http://apilayer.net/api/list?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
   method: "GET"
 }).then(function(response) {
+  console.log(" ");
   console.log("-------------------------------");
   console.log("Currency Layer - Country List");
   console.log("-------------------------------");
@@ -70,6 +72,7 @@ $.ajax({
   url: "https://financialmodelingprep.com/api/v3/majors-indexes/.DJI",
   method: "GET"
 }).then(function(response) {
+  console.log(" ");
   console.log("-------------------------------");
   console.log("Financial Modeling Prep");
   console.log("-------------------------------");
