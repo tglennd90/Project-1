@@ -13,4 +13,33 @@ var firebaseConfig = {
 
   var database = firebase.database();
 
-  
+// Globals //
+// ============================================= //
+
+    // Element Grabbers //
+    // ============================================= //
+
+    // Arrays //
+    // ============================================= //
+
+    // Objects //
+    // ============================================= //
+
+    // Variables //
+    // ============================================= //
+
+// Functions //
+// ============================================= //
+
+// Calls //
+// ============================================= //
+
+// var curLayerKey = "7c9557ab7ee90c1af2465e4d909d45a0";
+// var queryURL = "http://www.api.currencylayer.com/live?access_key=a1e6130fab22b5c9988778ce13f12fd3";
+
+$.ajax({
+  url: "http://apilayer.net/api/live?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
+  method: "GET"
+}).then(function(response) {
+  console.log(response);
+});
