@@ -31,38 +31,37 @@ var firebaseConfig = {
 // Functions //
 // ============================================= //
 
-// Currency Layer API for Exchange Rate //
+// Currency Converter API //
 // ============================================= //
 
+var ccaKey = "20250d43dabf3feedeba";
+var from = "EUR";
+var to = "USD";
+
 $.ajax({
-  url: "http://apilayer.net/api/live?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
+  url: "https://free.currconv.com/api/v7/convert?q=" + from + "_" + to + "&compact=ultra&apiKey=" + ccaKey,
   method: "GET"
 }).then(function(response) {
   console.log(" ");
   console.log("-------------------------------");
-  console.log("Currency Layer - Exchange Rate");
+  console.log("Currency Converter API");
   console.log("-------------------------------");
   console.log(response);
+  
 });
 
-// Currency Layer API for Origin Country //
+// Currency Converter Country List //
 // ============================================= //
 
 $.ajax({
-  url: "http://apilayer.net/api/list?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
+  url: "https://free.currconv.com/api/v7/currencies?apiKey=20250d43dabf3feedeba",
   method: "GET"
 }).then(function(response) {
   console.log(" ");
   console.log("-------------------------------");
-  console.log("Currency Layer - Country List");
+  console.log("Currency Converter Country List");
   console.log("-------------------------------");
   console.log(response);
-  console.log(response.currencies.BTC);
-  console.log(response.currencies.CNY);
-  console.log(response.currencies.CAD);
-  console.log(response.currencies.MXN);
-  console.log(response.currencies.EUR);
-  console.log(response.currencies.USD);
 });
 
 // Financial Modeling Prep API //
