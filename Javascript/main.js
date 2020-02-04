@@ -55,6 +55,12 @@ $.ajax({
   console.log("Currency Layer - Country List");
   console.log("-------------------------------");
   console.log(response);
+  console.log(response.currencies.BTC);
+  console.log(response.currencies.CNY);
+  console.log(response.currencies.CAD);
+  console.log(response.currencies.MXN);
+  console.log(response.currencies.EUR);
+  console.log(response.currencies.USD);
 });
 
 // Financial Modeling Prep API //
