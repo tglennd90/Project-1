@@ -31,7 +31,7 @@ var firebaseConfig = {
 // Functions //
 // ============================================= //
 
-// Currency Layer API //
+// Currency Layer API for Exchange Rate //
 // ============================================= //
 
 $.ajax({
@@ -39,7 +39,20 @@ $.ajax({
   method: "GET"
 }).then(function(response) {
   console.log("-------------------------------");
-  console.log("Currency Layer");
+  console.log("Currency Layer - Exchange Rate");
+  console.log("-------------------------------");
+  console.log(response);
+});
+
+// Currency Layer API for Origin Country //
+// ============================================= //
+
+$.ajax({
+  url: "http://apilayer.net/api/list?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
+  method: "GET"
+}).then(function(response) {
+  console.log("-------------------------------");
+  console.log("Currency Layer - Country List");
   console.log("-------------------------------");
   console.log(response);
 });
