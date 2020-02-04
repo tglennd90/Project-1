@@ -38,17 +38,21 @@ $.ajax({
   url: "http://apilayer.net/api/live?access_key=7c9557ab7ee90c1af2465e4d909d45a0",
   method: "GET"
 }).then(function(response) {
+  console.log("-------------------------------");
+  console.log("Currency Layer");
+  console.log("-------------------------------");
   console.log(response);
-  console.log("-------------------------------")
 });
 
-// Calls //
-// ============================================= //   https://financialmodelingprep.com/api/v3/majors-indexes/.DJI
+// Financial Modeling Prep API //
+// ============================================= //  
 
 $.ajax({
   url: "https://financialmodelingprep.com/api/v3/majors-indexes/.DJI",
   method: "GET"
 }).then(function(response) {
+  console.log("-------------------------------");
+  console.log("Financial Modeling Prep");
+  console.log("-------------------------------");
   console.log(response);
-  console.log("-------------------------------")
 });
